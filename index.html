@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function soma(val1, val2){
+            val1 = document.getElementById("fname").value;
+            val2 = document.getElementById("lname").value;
+        res = parseInt(val1)+parseInt(val2);
+        document.getElementById("oi").innerHTML = res;
+        }
+
+        </script>
+</head>
+<body>
+    
+<form>
+    <label for="fname">Valor 1:</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+     <label for="lname">Valor 2:</label><br>
+    <input type="text" id="lname" name="lname" value=""><br><br>
+    <input type="submit" value="Submit" onclick="soma()">
+  </form> 
+  <p id="oi"></p>
+</body>
+</html>
